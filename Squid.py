@@ -1,3 +1,11 @@
+import turtle
+
+from pygame import mixer # Load the required library
+
+mixer.init()
+mixer.music.load('sea.mp3')
+mixer.music.play()
+
 my_squid = turtle.Turtle()
 my_squid.speed("fastest")
 my_squid.color("black", "lightskyblue")
