@@ -1,13 +1,16 @@
 import turtle
 
 square = turtle.Turtle()
+my_turtle = turtle.Turtle()
+my_turtle.speed(0)
 
-for x in range(40):
-    square.forward(90)
-    square.left(90)
-    square.forward(90)
-    square.left(90)
-    square.forward(90)
-    square.left(90)
-    square.forward(90)
-    square.left(100)
+def square(length, angle):
+    for i in range(4):
+        my_turtle.forward(length)
+        my_turtle.right(angle)
+
+for i in range(100):
+    square(100, 90)
+    my_turtle.right(11)
+
+turtle.Screen().mainloop()
